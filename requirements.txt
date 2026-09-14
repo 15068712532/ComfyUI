@@ -1,10 +1,13 @@
 comfyui-frontend-package==1.48.7
 comfyui-workflow-templates==0.11.40
 comfyui-embedded-docs==0.5.9
-torch
-torchsde
-torchvision
-torchaudio
+
+# torch（注释掉，需手动安装 CUDA 版）
+# torch
+# torchsde
+# torchvision
+# torchaudio
+
 numpy>=1.25.0
 einops
 transformers>=4.50.3
@@ -28,10 +31,21 @@ requests
 simpleeval>=1.0.0
 blake3
 
-#non essential dependencies:
+# non essential dependencies
 kornia>=0.7.1
 spandrel
 pydantic~=2.0
 pydantic-settings~=2.0
 PyOpenGL>=3.1.8
 comfy-angle
+
+diffusers
+accelerate
+clip_interrogator>=0.6.0
+lark
+onnxruntime
+opencv-python-headless
+matplotlib
+peft
+gguf>=0.13.0
+protobuf
